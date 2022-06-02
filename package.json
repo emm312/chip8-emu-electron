@@ -1,0 +1,25 @@
+{
+  "name": "chip8-emulator",
+  "version": "1.0.0",
+  "description": "Electron.js port of my CHIP8 Emulator",
+  "main": "scripts/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.2"
+  },
+  "build": {
+    "appId": "com.emm312.chip8-emulator",
+    "mac": {
+      "category": "public.app-category.utility"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
